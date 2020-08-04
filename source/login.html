@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Login</title>
+        
+    </head>
+    <body>
+        
+        <form action="../index.html">
+        
+            <p>Login</p>
+            
+            <div class="container">
+
+                <input type="text" placeholder="Enter Username" name="username" maxlength="25" required>
+                <input type="password" placeholder="Enter Password" name="password" minlength="4" maxlength="20" required>
+            
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+
+            </div>
+            
+                <div>
+                    <button type="submit">Login</button>
+                    <button onclick="location.href='signup.html'" type="button">create an account</button>
+                </div>
+                
+                <div>
+                    <span class="password"><a href="forgot.html">forgot password?</a></span>
+                </div>
+            
+        </form>
+    
+    </body>
+</html>
