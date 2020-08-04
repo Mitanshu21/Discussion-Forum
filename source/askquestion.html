@@ -1,15 +1,95 @@
-<html>
-    <head>
-        
-    </head>
-    <body>
-        
-      <form style="border:1px solid #ccc">
-        <label for="question">Ask question:</label>
-        <input type="text" id="question" Placeholder="ask your question here....." name="Ask-question" maxlength="100" size="150"><br><br>
-        <div class="clearfix">
-          <button type="submit" class="submit-question">submit</button>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <!-- add icon link -->
+    <link rel = "icon" href = "../image/icon.png" type = "image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/header_footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+
+
+    
+  </head>
+  <body>
+
+    <!-- Top navigation -->
+    <div class="topnav">
+
+      <div class="topnav-area">
+          <!-- Left-aligned links (default) -->
+          
+          <a class="active" href="../index.html">Home</a>
+          <a href="../source/askquestion.html">Ask question</a>
+          <a href="../source/postblog.html">Post blog</a>
+          
+
+
+          <!-- Right-aligned links -->
+          <div class="topnav-right">
+            <a href="../source/login.html">Log in</a>
+            <input type="text" placeholder="search">
+            <a href="../source/contactus.html">Contact us</a>
+          </div>
         </div>
-      </form>
-    </body>
+          
+    </div>
+
+    
+
+
+
+
+    <!--main part-->
+    <div class="ask-q">
+        <form action="../index.html">
+            <h3 class="ask">Enter your question...</h3>
+            <textarea id="question" name="question" placeholder="ask question here....."></textarea>
+            <br/>
+            <h4>enter tag</h4>
+            <input type="text" id="tag" style="width: 500px;">
+            <br/>
+            <button type="submit">post question</button>
+        </form>
+    </div>
+    <div style="height: 100px;"></div>
+    
+
+
+    <!--footer part-->
+
+    
+    <div class="footer-background">
+      <div class="footer">
+        <div class="row">
+
+          <div class="column" style="width: 470px;">
+            <h2>About</h2>
+            <p> hello, this website is made for question answer discussion, and blog. </p>
+          </div>
+
+          <div class="column" style="width: 250px;">
+            <h2>Getting started</h2>
+            <ul>
+                <li><a href="#source/login.html">Features</a></li>
+                <li><a href="#source/login.html">FAQ</a></li>
+                <li><a href="#source/login.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="column" style="width: 250px;">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="askquestion.html">Ask question</a></li>
+                <li><a href="login.html">post blog</a></li>
+                <li><a href="contactus.html">contact us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+
+  </body>
 </html>

@@ -4,52 +4,134 @@
     <meta charset="UTF-8">
     <title>Home</title>
 
+    <!-- add icon link -->
+    <link rel = "icon" href = "image/icon.png" type = "image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/header_footer.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+
     
   </head>
   <body>
-    <div>
-            <nav>
-                  <form class="form-inline">
-                    <input type="text" class="form " placeholder="Search">
-                    <button type="submit" class="btn">Search</button>
-                  </form>
-            </nav>
-
-        </div>
 
     <!-- Top navigation -->
-    <div>
+    <div class="topnav">
+
+      <div class="topnav-area">
+          <!-- Left-aligned links (default) -->
+          
+          <a class="active" href="index.html">Home</a>
+          <a href="source/askquestion.html">Ask question</a>
+          <a href="source/postblog.html">Post blog</a>
+          
 
 
-      <!-- Left-aligned links (default) -->
-      <a class="active" href="index.html">Home</a><br>
-      <a href="source/askquestion.html">Ask question</a>
-	<br>
-      <a href="source/postblog.html">Post blog</a>
-      <br>
-      <!-- Right-aligned links -->
-      <div class="topnav-right">
-        <a href="source/login.html">Log in</a>
-	<br>
-        <a href="source/signup.html">Sign up</a>
-        <br>
-        <a href="source/aboutus.html">Contact us</a>
-      </div>
-      
+          <!-- Right-aligned links -->
+          <div class="topnav-right">
+            <a href="source/login.html">Log in</a>
+            <input type="text" placeholder="search">
+            <a href="source/contactus.html">Contact us</a>
+          </div>
+        </div>
+          
     </div>
+
+    
+
+
 
 
     <!--main part-->
 
+    <div class="main-body">
+      <div class="sidebar">
+        <a style="color: lightcoral;" href="index.html">Feed</a>
+        <a href="#news">News</a>
+        <a href="#politics">Politics</a>
+        <a href="#enviroment">Enviroment</a>
+        <a href="#programming">Programming</a>
 
+      </div>
+
+
+
+      <ul class="cont content">
+        <li>
+          <article class="qa-box">
+           <h4><a href="#que">What is plagiarism? What kind of steps should be taken to avoid it?</a></h4>
+            <p>Plagiarism is taking someone else’s work or idea and using them without giving credit owner.
+            <br>
+              Step to avoid plagiarism:
+            <br>
+              - Credit the original author
+            <br>
+              - Use plagiarism checker before you submit
+            <br>
+              - Use your own ideas
+            </p>
+          </article>
+        </li>
+        <li>
+          <article class="qa-box">
+            <h4><a href="#que2">What is URL encoding? What is the use of it?</a></h4>
+            <p>URL encoding is the practice of translating unprintable characters or characters with special
+              meaning within URLs to a representation that is unambiguous and universally accepted by
+              web browsers and servers.
+            </p>
+          </article>
+        </li>
+        <li>
+          <article class="qa-box">
+            <h4><a href="#que3">What are ‘push’ and ‘pull’ protocols?</a></h4>
+            <p>In push protocols, the client opens a connection to the server and keeps it constantly active.
+              The server will send all new new events to the client using that single always on connection.
+              In other words, the server pushes the new events to the client.
+            <br>
+              In pull protocols, the client periodically connects to the server, checks for and gets recent
+              events and then closes the connection and disconnects from the sever. The client repeats this
+              whole procedure to get updated about new events. In this mode, the clients periodically pulls
+              the new events from the server.
+            </p>
+          </article>
+        </li>
+      </ul>     
+    </div>
     
 
 
     <!--footer part-->
 
     
-      
+    <div class="footer-background">
+      <div class="footer">
+        <div class="row">
 
+          <div class="column" style="width: 470px;">
+            <h2>About</h2>
+            <p> hello, this website is made for question answer discussion, and blog. </p>
+          </div>
+
+          <div class="column" style="width: 250px;">
+            <h2>Getting started</h2>
+            <ul>
+                <li><a href="#source/login.html">Features</a></li>
+                <li><a href="#source/login.html">FAQ</a></li>
+                <li><a href="#source/login.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="column" style="width: 250px;">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#source/">Ask question</a></li>
+                <li><a href="#source/login.html">post blog</a></li>
+                <li><a href="source/contactus.html">contact us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
 
   </body>
 </html>
