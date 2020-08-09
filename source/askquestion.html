@@ -8,7 +8,7 @@
     <link rel = "icon" href = "../image/icon.png" type = "image/x-icon">
     <link rel="stylesheet" type="text/css" href="../css/header_footer.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
-
+    <script src="js/ask-que.js"></script>
 
     
   </head>
@@ -45,12 +45,21 @@
     <div class="ask-q">
         <form action="../index.html">
             <h3 class="ask">Enter your question...</h3>
-            <textarea id="question" name="question" placeholder="ask question here....."></textarea>
+            <textarea id="question" name="question" minlength="20" placeholder="ask question here....." required></textarea>
             <br/>
             <h4>enter tag</h4>
-            <input type="text" id="tag" style="width: 500px;">
+            <input type="text" list="datalist" onkeyup="ac(this.value)" style="width: 500px;">
             <br/>
+             
+            <datalist id="datalist"> 
+            
+            <option value="enviroment"></option> 
+            <option value="politics"></option> 
+            <option value="engineering"></option> 
+            <option value="college"></option> 
+            </datalist> 
             <button type="submit">post question</button>
+
         </form>
     </div>
     <div style="height: 100px;"></div>
